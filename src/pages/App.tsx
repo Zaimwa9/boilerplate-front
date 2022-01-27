@@ -14,6 +14,7 @@ const AppPlaceholder = () => {
         <BCol>
           <Header />
         </BCol>
+        dsqd
       </BRow>
       <BRow>
         <BCol justify="center">{isLoading ? "loading" : data.name}</BCol>

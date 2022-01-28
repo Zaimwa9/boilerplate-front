@@ -1,3 +1,4 @@
+import React from "react";
 import { Header, BCol, BRow } from "design-system/index";
 import { Container } from "react-bootstrap";
 import { Provider } from "react-redux";
@@ -14,7 +15,6 @@ const AppPlaceholder = () => {
         <BCol>
           <Header />
         </BCol>
-        dsqd
       </BRow>
       <BRow>
         <BCol justify="center">{isLoading ? "loading" : data.name}</BCol>

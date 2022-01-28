@@ -24,11 +24,3 @@ EXPOSE 3000
 
 # Finally runs the application
 CMD [ "yarn", "start" ]
-# docker run \
-#     -it \
-#     --rm \
-#     -v ${PWD}:/app \
-#     -v /app/node_modules \
-#     -p 3001:3000 \
-#     -e CHOKIDAR_USEPOLLING=true \
-#     sample:dev

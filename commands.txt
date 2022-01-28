@@ -1,0 +1,13 @@
+docker run \
+    -it \
+    --rm \
+    -v .:/app \
+    -v /app/node_modules \
+    -p 3001:3000 \
+    -e CHOKIDAR_USEPOLLING=true \
+    frontend:dev
+
+
+docker build -f Dockerfile.prod -t frontend:prod .
+
+docker run -it --rm -p 1337:80 frontend:prod

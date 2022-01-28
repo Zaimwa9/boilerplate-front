@@ -1,3 +1,4 @@
+import React from "react";
 import App from "pages/App";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
